@@ -1,6 +1,13 @@
 // BUTTON
 function calcPrice() {
 // VARIABILI 
+// INSERIMENTO NOME E COGNOME PASSEGERO
+let nomeCognome = document.getElementById("Nome&Cognome").value;
+document.getElementById("Nomepasseggero").innerText = nomeCognome;
+// INSERIMENTO ETA'
+let età = document.getElementById("età").value;
+// INSERIMENTO KM
+let km = document.getElementById("Kmdapercorrere")
     let generalprice = 0.21;
     let pricexkm = generalprice * km;
 // NaN condition
@@ -22,10 +29,3 @@ function calcPrice() {
         document.querySelector("#price").innerText = pricexkm + " €";
     }
     }
-// INSERIMENTO NOME E COGNOME PASSEGERO
-    let nomeCognome = document.getElementById("Nome&Cognome").value;
-    document.getElementById("Nomepasseggero").innerText = nomeCognome;
-// INSERIMENTO ETA'
-    let età = document.getElementById("età").value;
-// INSERIMENTO KM
-    let km = document.getElementById("Kmdapercorrere")
