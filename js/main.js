@@ -1,11 +1,8 @@
 // BUTTON
+function calcPrice() {
 // VARIABILI 
-    let nomeCognome = prompt ("Quale è il suo nome e Cognome")
-    let età = parseInt(prompt("Quanti anni hà?"));
-    let richiestaKm = parseInt(prompt("Quanti Km dovrà percorrere?"));
-    let km = 1;
     let generalprice = 0.21;
-    let pricexkm = generalprice * richiestaKm;
+    let pricexkm = generalprice * km;
 // NaN condition
     if (isNaN(età) || isNaN(richiestaKm)) {
         alert("Si accettano solo caratteri numerici")
@@ -22,5 +19,13 @@
         }
 // REMOVE DECIMALS        
         pricexkm = parseFloat(pricexkm).toFixed(2);
-        document.querySelector(".price").innerText = pricexkm + " €";
+        document.querySelector("#price").innerText = pricexkm + " €";
     }
+    }
+// INSERIMENTO NOME E COGNOME PASSEGERO
+    let nomeCognome = document.getElementById("Nome&Cognome").value;
+    document.getElementById("Nomepasseggero").innerText = nomeCognome;
+// INSERIMENTO ETA'
+    let età = document.getElementById("età").value;
+// INSERIMENTO KM
+    let km = document.getElementById("Kmdapercorrere")
