@@ -34,5 +34,9 @@ let CodicePrenotazione = Math.ceil (Math.random() * 10000 );
     pricexkm = parseFloat(pricexkm).toFixed(2);
     document.querySelector("#price").innerText = pricexkm + " €";
 }
-
+}
+function cleanUp() {
+     let nomeCognome = document.getElementById("Nome&Cognome").value="";
+     let eta = document.getElementById("età").value="";
+     let km = document.getElementById("Kmdapercorrere").value="";
 }
